@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1{grid-area: header;}
+        .item2{grid-area: main;}
+        .item3{grid-area: footer;}
+        .container{
+            display: grid;
+            grid: 
+            'header main main'
+            'footer footer footer'
+            ;
+            grid-gap: 10px;
+        }
+        .item1{
+            background-color: red;
+            height: 500px;
+            display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns: 3fr 1fr;
+            grid-gap: 10px;
+        }
+        .item1 div{
+            background-color: yellow;
+        }
+        .fk{
+            background-color: white;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50%;
+            grid-gap: 10px;
+        }
+        .fk div{
+            background-color: green;
+        }
+        .item2{
+            background-color: blue;
+            height: 800px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(4,1fr);
+            grid-gap: 10px;
+        }
+        .item2 div{
+            background-color: yellow;
+        }
+        .item3{
+            background-color: green;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-template-rows:4fr;
+            grid-gap: 10px;
+        }
+        .item3 div{
+            background-color: purple;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <div></div>
+            <div class="fk">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="item2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="item3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="item4">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        display: block;
+        margin: 0.2rem auto;
+      }
+
+      .grid-inner {
+        overflow: hidden;
+      }
+
+      .content {
+        padding: 1rem;
+      }
+
+      .grid {
+        border: 1px dashed;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.5s ease-in-out;
+      }
+
+      .open {
+        grid-template-rows: 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <small>利用网格轨道transition实现高度从0过度到auto</small>
+    <button>Toggle</button>
+    <section class="grid">
+      <div class="grid-inner">
+        <div class="content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam,
+          obcaecati id. Officia dignissimos autem consectetur nemo obcaecati.
+          Accusantium a, consequuntur.
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const button = document.querySelector("button");
+      const grid = document.querySelector(".grid");
+
+      button.addEventListener("click", toggleGrid);
+
+      function toggleGrid() {
+        grid.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
