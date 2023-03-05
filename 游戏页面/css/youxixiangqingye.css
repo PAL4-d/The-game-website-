@@ -23,6 +23,8 @@ ol, ul {
 
 
 .header-main{
+    margin: 0 auto;
+    max-width: 1130px;
     position: relative;
     display: flex;
     align-items: center;
@@ -369,4 +371,256 @@ span.subtitle{
 .footer-dc a {
     margin: 0 3px;
     color: #909090;
+}
+
+
+
+/* //详情页描述部分 */
+.fmainwrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    min-height: 300px;
+    margin-top: 10px;
+}
+.poster-imgbox {
+    position: relative;
+    width: 214px;
+    height: 304px;
+}
+.poster-imgbox .imgbox {
+    background-size: 100%;
+    width: 214px;
+    height: 304px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #bbb;
+}
+.game_details {
+    width: calc(100% - 210px);
+    padding-left: 24px;
+}
+.hname {
+    margin-bottom: 10px;
+}
+.hname h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+.subhname.red {
+    color: #f13802;
+}
+.subhname {
+    margin-top: 8px;
+    font-weight: 500;
+    color: #909090;
+    font-size: 1.08em;
+}
+.ul-details {
+    line-height: 28px;
+    font-size: 1.02em;
+}
+.ul-details li {
+    font-size: 1.1em;
+}
+.ul-details li > span:first-child {
+    font-weight: 500;
+    padding-right: 2px;
+}
+span.dateym {
+    font-size: 15px;
+    padding-right: 6px;
+    color: #8a8a8a;
+}
+.ulgenre a, .link-year {
+    color: #4a84c4;
+    border-bottom: 1px dotted;
+    font-size: 0.95em;
+}
+
+.tquote {
+    position: relative;
+    margin-top: 16px;
+    font-weight: 500;
+}
+.tquote:before, .notice_main:before {
+    position: absolute;
+    top: -1px;
+    left: -12px;
+    color: #e2000e;
+    content: "*";
+    font-weight: 700;
+    font-size: 18px;
+}
+.quoteinf {
+    display: inline-block;
+    font-weight: normal;
+    padding-top: 4px;
+    font-size: 12px;
+    color: #6b6b6b;
+    cursor: pointer;
+    border-bottom: 1px dashed #b3b3b3;
+}
+.tquote .fa-square-question {
+    margin-left: 4px;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #b1b1b1;
+    transition: .4s;
+    cursor: pointer;
+}
+.fa-square-question::before {
+    content: "\f2fd";
+}
+.game_desc {
+    position: relative;
+    margin: 10px 0 24px 0;
+    color: #212529;
+    line-height: 1.5;
+    font-size: 1.125em;
+}
+.scrhead {
+    padding: 12px 0px 12px 5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.scrblock {
+    padding: 0 0px 0 5px;
+    position: relative;
+    font-size: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 2fr;
+    grid-gap: 10px;
+}
+.scrblock div {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0px #3e3e3e, 0 0px 0px 1px #3e3e3e8c;
+}
+.scrblock div img{
+    border-radius: 2px;
+    width: 249px;
+    height: 140px;
+    box-shadow: 0 1px 3px 0px #3e3e3e, 0 0px 0px 1px #3e3e3e8c;
+}
+.videohead {
+    margin: 24px 0px 16px 5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+#microtrailer {
+    position: relative;
+    text-align: center;
+}
+.iframe-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-wrap iframe, .iframe-wrap video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+    cursor: pointer;
+}
+.box-steamrating {
+    position: relative;
+    line-height: 1.4;
+    font-size: 1.14em;
+    margin: 14px 0 25px 0;
+}
+.stser {
+    font-weight: 500;
+}
+.orang_rate {
+    color: #ca3d19;
+}
+.steamreviews {
+    display: none;
+}
+.tech_details {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px -24px;
+}
+.tech_details .tech_details-block {
+    width: 50%;
+    margin: 0px 24px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tech_details .infotech {
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #f3f3f3;
+    font-size: 17px;
+    font-weight: 700;
+}
+.tech_details .tech_details-block ul {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.tech_details .tech_details-block ul span:first-child {
+    font-weight: 500;
+}
+fieldset.tracker_list {
+    margin: 14px 0;
+}
+.torrent_list {
+    position: relative;
+}
+.list_item {
+    position: relative;
+    background: #f3f3f3;
+    color: #0e0e0e;
+    padding: 14px 16px;
+    margin-bottom: 26px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.showtitle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+.show_ver {
+    color: #787878;
+}
+.list_item_right{
+    display: flex;
+    width: 30%;
+}
+.list_item_right div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+}
+.list_item_right p{
+    color: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list_item_right button{
+    border: 2px black solid;
+    width: 60%;
+    height: 100%;
+    background-color: rgb(254, 209, 102);
+    border-radius: 2px;
 }
