@@ -9,17 +9,21 @@
     box-sizing: border-box;
 }
 body{
-    background: #f3f3f3;
+    background: black;
     font-size: 14px;
+    color: white;
 }
 img{
     max-width: 100%;
     max-height: 100%;
 }
-ol, ul {
+ol, ul,li {
     list-style: none;
 }
-
+a{
+    list-style: none;
+    text-decoration: none;
+}
 
 
 .header-main{
@@ -34,15 +38,13 @@ ol, ul {
     color: #000;
     padding: 0 20px;
     border-radius: 3px 3px 0px 0px;
+    border-bottom: 1px solid white;
 }
 .logo{
     position: relative;
-    width: 137px;
-    height: 30px;
+    width: auto;
+    height: 100%;
     background-color: green;
-}
-.logo img{
-    width: 100%;
 }
 .menu-head{
     width:300px;
@@ -51,7 +53,6 @@ ol, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: green;
 }
 .menu-head input{
     width: 70%;
@@ -78,10 +79,48 @@ ol, ul {
     white-space: nowrap;
     padding: 0 10px;
 } */
+.navbar{
+    margin: 0 auto;
+    max-width: 1130px;
+    height: 35px;
+    background-color: rgb(27, 27, 27);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar button{
+    color:white;
+    margin-right: 24px;
+}
+.navbar ul{
+    height: 100%;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    border-bottom-right-radius: 10px;
+}
+.navbar ul li:last-child{
+    border-right: none;
+}
+.navbar ul li:hover{
+    background-color: rgb(254, 209, 102);
+}
+.navbar ul li{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-right: white solid 1px;
+}
+.navbar ul li a{
+    color: white;
+}
 
 .wrap{
     max-width: 1130px;
-    margin: 40px auto;
+    margin: 10px auto;
 }
 .main-wrap{
     overflow: hidden;
@@ -91,7 +130,7 @@ ol, ul {
     position: relative;
     width: calc(100% - 308px);
     float: left;
-    background-color: #fff;
+    background-color: rgb(27, 27, 27);
     padding: 10px 24px;
     margin-top: 10px;
     border-radius: 2px;
@@ -105,7 +144,7 @@ ol, ul {
     margin: 10px 0;
 }
 .block-right {
-    background: #fff;
+    background: rgb(27, 27, 27);
     padding: 10px;
     margin-bottom: 16px;
 }
@@ -117,10 +156,13 @@ ol, ul {
 .head-right {
     position: relative;
     font-size: 15px;
-    color: #000;
+    color: white;
     font-weight: 500;
     padding: 6px 0 4px 4px;
     text-transform: uppercase;
+}
+.head-right font{
+    color: white;
 }
 .side-item {
     position: relative;
@@ -179,6 +221,7 @@ ol, ul {
 }
 .head-right.cp {
     cursor: pointer;
+    color: white;
 }
 
 .head-right {
@@ -194,11 +237,12 @@ ol, ul {
     display: block;
     opacity: 0.8;
     padding-left: 12px;
+
 }
 .sctag a {
     position: relative;
     display: inline-block;
-    color: #000;
+    color: white;
     font-size: 15px;
     margin-top: 2px;
     margin-bottom: 2px;
@@ -214,7 +258,7 @@ ol, ul {
 
 .carusel-box{
     position: relative;
-    background-color: #fff;
+    background-color: rgb(27, 27, 27);
     padding-top: 4px;
     min-height: 298px;
     height: auto;
@@ -257,7 +301,7 @@ ol, ul {
     min-height: 100%;
 }
 .itemtop-title a{
-    color: #272727;
+    color: white
 }
 .catheader{
     position: relative;
@@ -274,11 +318,11 @@ ol, ul {
 .catheader h1{
     font-size: 20px;
     font-weight: 700;
-    color: #353535;
+    color: white;
 }
 span.subtitle{
     font-size: 0.94em;
-    color: #353535;
+    color: white;
 }
 .flex-content, .flexstatic {
     display: flex;
@@ -319,7 +363,7 @@ span.subtitle{
 }
 .short_title a {
     display: block;
-    color: #000;
+    color: white;
     font-size: 1.06em;
     font-weight: 500;
 }
@@ -376,4 +420,14 @@ span.subtitle{
 .footer-dc a {
     margin: 0 3px;
     color: #909090;
+}
+
+@media screen and (max-width: 768px) {
+    .right-nav{
+        display: none;
+    }
+    .main{
+        width: auto;
+    }
+    
 }
