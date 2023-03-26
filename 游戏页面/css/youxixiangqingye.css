@@ -48,7 +48,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 120px;
     background: rgb(27, 27, 27);
     color: #000;
     padding: 0 20px;
@@ -59,7 +59,6 @@ a{
     position: relative;
     width: auto;
     height: 100%;
-    background-color: green;
 }
 .menu-head{
     width:300px;
@@ -133,6 +132,9 @@ a{
     color: white;
 }
 
+
+
+
 .wrap{
     max-width: 1130px;
     margin: 10px auto;
@@ -147,7 +149,6 @@ a{
     float: left;
     background-color: rgb(27, 27, 27);
     padding: 10px 24px;
-    margin-top: 10px;
     border-radius: 2px;
 }
 .right-nav{
@@ -156,12 +157,10 @@ a{
     z-index: 30;
     background: #f3f3f3;
     float: right;
-    margin: 10px 0;
 }
 .block-right {
     background: rgb(27, 27, 27);
     padding: 10px;
-    margin-bottom: 16px;
 }
 .actual-box {
     height: 552px;
@@ -171,10 +170,13 @@ a{
 .head-right {
     position: relative;
     font-size: 15px;
-    color: #000;
+    color: white;
     font-weight: 500;
     padding: 6px 0 4px 4px;
     text-transform: uppercase;
+}
+.head-right font{
+    color: white;
 }
 .side-item {
     position: relative;
@@ -238,7 +240,7 @@ a{
 .head-right {
     position: relative;
     font-size: 15px;
-    color: #000;
+    /* color: #000; */
     font-weight: 500;
     padding: 6px 0 4px 4px;
     text-transform: uppercase;
@@ -252,7 +254,7 @@ a{
 .sctag a {
     position: relative;
     display: inline-block;
-    color: #000;
+    color: white;
     font-size: 15px;
     margin-top: 2px;
     margin-bottom: 2px;

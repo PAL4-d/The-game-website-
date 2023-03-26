@@ -24,6 +24,15 @@ a{
     list-style: none;
     text-decoration: none;
 }
+/* 去除滚动条 */
+body::-webkit-scrollbar{
+    display: none;
+}
+.actual-box::-webkit-scrollbar{
+    display: none;
+}
+
+
 
 
 .header-main{
@@ -33,7 +42,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 120px;
     background: rgb(27, 27, 27);
     color: #000;
     padding: 0 20px;
@@ -44,7 +53,6 @@ a{
     position: relative;
     width: auto;
     height: 100%;
-    background-color: green;
 }
 .menu-head{
     width:300px;
@@ -117,6 +125,51 @@ a{
 .navbar ul li a{
     color: white;
 }
+.rotation {
+    max-width: 1130px;
+    margin: 10px auto;
+    display: flex;
+    padding: 10px 24px;
+    background-color: rgb(27, 27, 27);
+}
+.rotation-box{
+    height: 350px;
+    box-sizing: border-box;
+}
+.rotation-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+.rotation-text{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rotation-text ul li{
+    font-size: 14px;
+    margin: 5px 0;
+}
+.rotation-text ul li span:last-child{
+    color: #8a8a8a;
+}
+.rotation-text h1{
+    margin-bottom: 2px;
+    border-bottom: 1px white solid;
+}
+.rotation-text div{
+    margin: 5px 0;
+}
+.rotation-button{
+    margin-top: 10px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    border-radius: 20px;
+}
+
 
 .wrap{
     max-width: 1130px;
@@ -132,7 +185,6 @@ a{
     float: left;
     background-color: rgb(27, 27, 27);
     padding: 10px 24px;
-    margin-top: 10px;
     border-radius: 2px;
 }
 .right-nav{
@@ -141,12 +193,10 @@ a{
     z-index: 30;
     background: #f3f3f3;
     float: right;
-    margin: 10px 0;
 }
 .block-right {
     background: rgb(27, 27, 27);
     padding: 10px;
-    margin-bottom: 16px;
 }
 .actual-box {
     height: 552px;
@@ -276,6 +326,9 @@ a{
     font-weight: 500;
     margin-bottom: 10px;
 }
+.carouhead a font b{
+    color: white;
+}
 .head-carusel{
     display: flex;
     flex-wrap: wrap;
@@ -396,6 +449,8 @@ span.subtitle{
     margin-bottom: 10px;
 }
 .footer {
+    margin: 0 auto;
+    max-width: 1130px;
     background: #1e1e1e;
     min-width: 320px;
     padding: 25px 0;
